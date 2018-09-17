@@ -1,5 +1,10 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { CarnesPage } from '../carnes/carnes';
+import { PeixesPage } from '../peixes/peixes';
+import { SaladasPage } from '../saladas/saladas';
+import { BebidasPage } from '../bebidas/bebidas';
+import { SobremesasPage } from '../sobremesas/sobremesas';
 
 /**
  * Generated class for the CardapioPage page.
@@ -20,6 +25,26 @@ export class CardapioPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad CardapioPage');
+  }
+
+  gotoCarnes(){
+    this.navCtrl.push(CarnesPage);
+  }
+  
+  gotoPeixes(){
+    this.navCtrl.push(PeixesPage);
+  }
+
+  gotoSaladas(){
+    this.navCtrl.push(SaladasPage);
+  }
+
+  gotoBebidas(){
+    this.navCtrl.push(BebidasPage);
+  }
+
+  gotoSobremesas(){
+    this.navCtrl.push(SobremesasPage);
   }
 
 }
